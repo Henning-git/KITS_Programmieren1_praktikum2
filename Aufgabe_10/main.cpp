@@ -149,44 +149,29 @@ int main()
         // valid user input
         // -------- menu ochestration --------
         switch(input) {
-            case 'i': {
+            case 'i':
+            case 'I':
                 add_at_end();
                 break;
-            }
-            case 'a': {
-                add_at_end();
-                break;
-            }
-            case 's': {
+
+            case 's':
+            case 'S':
                 print_used_fields();
                 break;
-            }
-            case 'S': {
-                print_used_fields();
-                break;
-            }
-            case 'o': {
+
+            case 'o':
+            case 'O':
                 print_fieldls();
                 break;
-            }
-            case 'O': {
-                print_fieldls();
-                break;
-            }
-            case 'd': {
+
+            case 'd':
+            case 'D':
                 delete_element();
                 break;
-            }
-            case 'D': {
-                delete_element();
-                break;
-            }
-            case 'q': {
+
+            case 'q':
+            case 'Q':
                 return 0;
-            }
-            case 'Q': {
-                return 0;
-            }
         }
     }
 
