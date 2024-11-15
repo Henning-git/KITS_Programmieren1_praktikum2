@@ -36,11 +36,11 @@ int main()
     // calculate root
     double x = d;
     double y = 1;
+
     // do while to cover initial x < y
     do {
         x = (x + y) / 2.0;
         y = d / x;
-        cout << x << " " << y << endl;
     } while (x > y + 0.0000001);
     // it can happen, that x > y but only in the last 2 digits or so (e.g. x = 234567)
     // to abort the while, we just add a bit to y. That prevents x from being slightly smaller than y
